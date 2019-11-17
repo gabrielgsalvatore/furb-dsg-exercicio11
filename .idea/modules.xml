@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/furb-dsg-exercicio11.iml" filepath="$PROJECT_DIR$/furb-dsg-exercicio11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/keystore-reader/keystore-reader.iml" filepath="$PROJECT_DIR$/keystore-reader/keystore-reader.iml" />
     </modules>
   </component>
 </project>
