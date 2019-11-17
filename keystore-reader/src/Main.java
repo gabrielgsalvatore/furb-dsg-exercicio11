@@ -1,5 +1,7 @@
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.Key;
@@ -13,6 +15,7 @@ public class Main {
 
     public static void main(String[] args) {
         try {
+            FileOutputStream outputStream = new FileOutputStream("informacoes-keystore.txt");
             InputStream file = new FileInputStream(System.getProperty("user.dir")+"/assets/keystores/ks.jks");
             KeyStore keyStore = KeyStore.getInstance("JKS");
             keyStore.load(file, "senha".toCharArray());
@@ -44,7 +47,10 @@ public class Main {
                     result.append("Self-Signed: Não");
                 }
                 System.out.println(result.toString());
+                result.append("\n");
+                outputStream.write(result.toString().getBytes());
             }
+            outputStream.close();
         }
         catch (Exception e){
             e.printStackTrace();
