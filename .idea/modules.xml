@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/furb-dsg-exercicio11.iml" filepath="$PROJECT_DIR$/furb-dsg-exercicio11.iml" />
       <module fileurl="file://$PROJECT_DIR$/keystore-reader/keystore-reader.iml" filepath="$PROJECT_DIR$/keystore-reader/keystore-reader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/questão2/questão2.iml" filepath="$PROJECT_DIR$/questão2/questão2.iml" />
     </modules>
   </component>
 </project>
