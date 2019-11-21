@@ -13,16 +13,14 @@ import java.security.MessageDigest;
 import java.security.spec.KeySpec;
 import java.util.Arrays;
 
-public class Main {
+public class AESFoto {
 
     public static void main(String[] args) {
         MessageDigest sha = null;
         SecretKeySpec secretKey;
         try {
-            byte[] key = "AAAAAAAAAAAAAA".getBytes();
-            sha = MessageDigest.getInstance("SHA-1");
-            key = sha.digest(key);
-            key = Arrays.copyOf(key,16);
+            FileInputStream fileKey = new FileInputStream(System.getProperty("user.dir")+"/assets/chavebin");
+            byte[] key = fileKey.readAllBytes();
             secretKey = new SecretKeySpec(key, "AES");
             Cipher c = Cipher.getInstance("AES/ECB/PKCS5Padding");
             c.init(Cipher.ENCRYPT_MODE, secretKey);
