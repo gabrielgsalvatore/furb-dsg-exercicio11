@@ -2,8 +2,9 @@
 
 Exercícios para manipulação de Keystores
 
-Alunos: Gabriel Garcia Salvador   
-        Sidnei Lanser
+Alunos: 
+* Gabriel Garcia Salvador   
+* Sidnei Lanser
 
 
 # Instruções
